@@ -8,7 +8,7 @@ public class HeadsTailsApp{
 		System.out.println("Do you want to play?");
 		Scanner playerCommandsReader = new Scanner(System.in);
 		String answer = playerCommandsReader.nextLine();
-		if(checker.checkWannaPlayAnswer()){
+		if(checker.checkWannaPlayAnswer(answer)){
 			answer = answer.toLowerCase();
 			if(answer == "no"){
 				System.out.println("Ok, bye then!");

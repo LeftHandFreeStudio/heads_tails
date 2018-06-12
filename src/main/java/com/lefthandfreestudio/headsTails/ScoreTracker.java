@@ -1,3 +1,5 @@
+package com.lefthandfreestudio.headsTails;
+
 public class ScoreTracker{
 	private int score = 0;
 	public void startNewGame(){
