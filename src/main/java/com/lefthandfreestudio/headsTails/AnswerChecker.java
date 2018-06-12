@@ -8,8 +8,23 @@ public class AnswerChecker{
 				answer = answer.toLowerCase();
 				if(answer.equals("yes") || answer.equals("no")){
 						isAnswerValid = true;
-				};
-			};
+				}
+			}
 		return isAnswerValid;
+	}
+	public boolean checkBetAmount(String answer, int currentScore){
+		boolean isBetValid = true;
+		int bet;
+			try{
+				bet = Integer.parseInt(answer);
+			}catch(Exception e){
+				isBetValid = false;
+				return isBetValid;
+			}
+		if(isBetValid && (bet <= 0 || bet > currentScore)){
+				isBetValid = false;
+				return isBetValid;
+		}
+		return isBetValid;
 	}
 }
