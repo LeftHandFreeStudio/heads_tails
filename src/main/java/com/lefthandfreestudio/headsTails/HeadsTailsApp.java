@@ -6,6 +6,6 @@ public class HeadsTailsApp{
 		System.out.println("Do you want to play?")
 		Scanner playerCommandsReader = new Scanner(System.in);
 		String answer = playerCommandsReader.nextLine();
-		System.out.println(answer)
+		System.out.println(answer);
     }
 }
