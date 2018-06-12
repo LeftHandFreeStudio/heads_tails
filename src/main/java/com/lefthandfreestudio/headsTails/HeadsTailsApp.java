@@ -14,8 +14,9 @@ public class HeadsTailsApp{
 				System.out.println("Ok, bye then!");
 			}else{
 				System.out.println("Let's play! How much do you want to bet?");
-			
 			}
-		}	
+		}else{
+			System.out.println("Invalid answer!");
+		}
     }
 }
