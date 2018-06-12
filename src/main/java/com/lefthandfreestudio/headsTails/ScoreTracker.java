@@ -11,6 +11,9 @@ public class ScoreTracker{
 	public void decreaseScore(int bet){
 		score -= bet;
 	}
+	public boolean isGameLost(){
+		return score <= 0;
+	}
 	public int getScore(){
 		return score;
 	}
